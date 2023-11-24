@@ -1,0 +1,28 @@
+.image-block-with-after-element {
+  .content-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 24px !important;
+    .sqs-col-12 {
+      .image-block {
+        position: relative;
+        padding-bottom: 8px !important;
+        &:after {
+          content: '';
+          background: url(https://static1.squarespace.com/static/654bd3067a7ecc3ea3ac59ab/t/654cdf61c600f70e5c0d478e/1699536737305/header_title_image.png) no-repeat center;
+          background-size: contain;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 77.12%;
+          height: 15%;
+          transform: translate(-50%, -68.5%);
+          z-index: 10;
+        }
+        @media only screen and (max-width: 767px) {
+          padding-top: 0 !important;
+          .sqs-image-shape-container-element {padding-bottom: 75% !important;}
+        }
+      }
+    }
+  }
+}
