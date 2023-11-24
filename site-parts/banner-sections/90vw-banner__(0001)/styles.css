@@ -1,0 +1,9 @@
+.fullscreen-width-minus-80px {
+  .section-border {
+    max-width: ~"calc(100vw - clamp(45px, 5.291vw, 80px))" !important;
+    margin: ~"clamp(44px, 5.0926vw, 77px)" auto 0 0;
+  }
+  @media only screen and (max-width: 900px) and (orientation: portrait) {
+    min-height: 40vh !important;
+  }
+}
