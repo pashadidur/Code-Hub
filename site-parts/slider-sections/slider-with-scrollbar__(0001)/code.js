@@ -93,6 +93,4 @@ if (typeof(checkPlugin3) != 'undefined' && checkPlugin3 != null){
   })    
 }
 </script>
-
-
 /* FOOTER SECTION */
