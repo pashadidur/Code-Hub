@@ -1,0 +1,101 @@
+.hover-tabs-section {
+  min-height: 25vh !important;
+  .content-wrapper {
+    @media only screen and (min-width: 2000px) {padding-top: 150px !important;}
+    @media only screen and (max-width: 640px) {padding-bottom: 0 !important;}
+  }
+  .freya-plugin.summary-block-wrapper {
+    .summary-item-list-container {
+      @media only screen and (min-width: 1281px) {width: 44.225%;}
+      @media only screen and (max-width: 1000px) {width: 100%;}
+    }
+    .freya-images-wrapper {
+      @media only screen and (min-width: 1281px) {
+        width: ~"calc(55.775% - 64px)";
+        margin-left: 64px;
+        padding-bottom: 48%;
+      }
+      @media only screen and (max-width: 1200px) {padding-bottom: 55%;}
+      @media only screen and (max-width: 1000px) {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      @media only screen and (max-width: 640px) {padding-bottom: 95%;}
+    }
+    .summary-item-list-container {
+      position: relative;
+      &:before {
+        content: 'THE TURNKEY PROCESS';
+        font-family: 'FreightBigPro-book';
+        line-height: 1.9em;
+        font-size: ~"clamp(36px, 3.212vw, 50px)";
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #000000;
+        @media only screen and (max-width: 1000px) {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 24px;
+          line-height: 1.4em;
+        }
+      }
+    }
+    .summary-item-list {
+      position: relative;    
+      @media only screen and (max-width: 1440px) {margin-top: 10px !important;}   
+      &:before {
+        content: '';
+        background-color: #232323;
+        width: 0.5px;
+        height: 100%;
+        margin-left: 40px;
+        position: absolute;
+        top: 7px;
+        @media only screen and (max-width: 1049px) {margin-left: 29.5px;}
+      }
+    }
+    .summary-item {
+      background-color: transparent !important;
+      margin-bottom: 22px !important;
+      padding: 0 !important;
+      border: 0 !important;  
+      .summary-content {
+        max-width: 480px;
+        padding-left: 100px;
+        @media only screen and (max-width: 1049px) {padding-left: 70px;}
+      }      
+      .summary-title {
+        position: relative;
+        font-family: 'FreightDispPro-regular';
+        font-size: 22px !important;
+        line-height: 0.90em;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #232323 !important;
+        &:before {
+          content: '';
+          background-color: #FFFFFF;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          top: 4px;
+          left: -64px;
+          border: 0.5px solid #232323;
+          border-radius: 50%;
+          @media only screen and (max-width: 1049px) {left: -45px;}
+        }
+      }
+      .summary-excerpt {
+        margin: 0;
+        p {.p-style; color: #232323;}
+      }
+      &:hover {
+        //margin-bottom: 32px;
+        .summary-title:before {background-color: #232323;}
+      }
+    }
+  }
+}
